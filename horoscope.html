@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags for SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Horoscope</title>
+    <meta name="keywords" content="horoscope,zodiac,horoscope website,horoscope daily,horoscope twice daily" />
+    <meta name="description" content="Find free daily horoscopes at HoroscopeTwiceDaily.com your one stop shop for all things.Find out what the stars have aligned for you today!" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <meta name="author" content="HoroscopeTwiceDaily - https://HoroscopeTwiceDaily.com" />
+    <meta name="copyright" content="&copy; 2018 HoroscopeTwiceDaily. All rights reserved." />
+    <meta name="language" content="en-us" />
+    <!-- End of Meta Tags -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/style.css">      <!-- contains custom styles -->
+    <!-- End of Stylesheets -->
+  </head>
+  <body id="Horoscope">
+    <div class="horoscope-body container">
+      <!-- Navigation Section -->
+      <nav id="Navigation">
+        <a href="index.html"><img class="logo" alt="logo" src="media/logo.png" width="200px" height="50px" /></a>
+        <ul class="nav-wrapper">
+          <li><a href="">About Us</a></li>
+          <li><a href="horoscope.html">Horoscope</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile Navbar -->
+      <nav id="navbar-small" class="navbar navbar-expand-lg navbar-dark" style="background: none; ">
+        <a class="navbar-brand" href="index.html"><img class="logo" alt="logo" src="media/logo.png" width="200px" height="50px" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="horoscope.html">Horoscope</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        </nav>
+      <!-- End Navigation Section -->
+
+      <!-- Horoscope Body -->
+      <section class="horoscope-wrapper">
+        <div class="horoscope-content animated slideInLeft">
+          <h3>AQUARIUS</h3>
+          <h1>The Water Bearer</h1>
+          <div class="line"></div>
+          <strong>Aug 30, 2018</strong>
+          <p id="horoscope-discriiption">
+            You're feeling pretty strong now, Aquarius. You're probably in fairly good health
+            and your mind is sharp. You've outgrown some areas of your life that no longer
+            seem what they once were. One of these could be your work. You could be
+            considering leaving a job you took primarily for the money and going into a
+            profession you really love. Do it if it works for you.
+          </p>
+          <div class="share">
+            <h5>Share</h5>
+            <div class="icon-wrapper">
+              <a href=""><img alt="social-icon" src="media/social/facebook.png" height="30px" width="30px"/></a>
+              <a href=""><img alt="social-icon" src="media/social/twitter.png" height="30px" width="30px"/></a>
+              <a href=""><img alt="social-icon" src="media/social/google.png" height="30px" width="30px"/></a>
+            </div>
+          </div>
+        </div>
+        <div id="horoscope-image" class="horoscope-image animated fadeIn delay-1s">
+          <img src="media/zodiac/aquarius.png" alt="horoscope" height="400px" width="400px"/>
+        </div>
+      </div>
+    </section>
+    <!-- End Horoscope Body -->
+
+    <!-- Scripts -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js'></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script  src="js/carousel.js"></script>
+    <script>
+    if(document.getElementsByTagName('body')[0].clientWidth<767)
+    {
+      document.querySelector(".horoscope-body").classList.remove("container");
+    }
+    </script>
+    <!-- End Scripts -->
+  </body>
+</html>

@@ -1,0 +1,258 @@
+/*--------------------------------------------------------------
+                    COMMON STYLES
+---------------------------------------------------------------*/
+body
+{
+  color: white;
+  background-image: url('../media/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav
+{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+a:hover
+{
+  text-decoration: none;
+}
+ul
+{
+  list-style : none;
+}
+#navbar-small
+{
+  display: none;
+}
+.nav-wrapper
+{
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-wrapper a
+{
+  color : white;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+/*--------------------------------------------------------------
+                    HOMEPAGE STYLES
+---------------------------------------------------------------*/
+.website-intro
+{
+  text-align: center;
+  padding-top: 100px;
+  width : 600px;
+  height : 600px;
+  margin: 0px auto;
+  background-image:url('../media/horoscopeLight2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.constillation-logo
+{
+  width : 140px;
+  height : 140px;
+  margin: 0px auto 30px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.website-intro>p
+{
+  max-width: 550px;
+  margin: 0px auto;
+}
+.carousel-wrap
+{
+  margin-top: -180px;
+}
+.carousel-wrap .item>a
+{
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+.carousel-wrap .item>a>p
+{
+  margin-top: 6px;
+}
+
+
+/*--------------------------------------------------------------
+                    Horoscope STYLES
+---------------------------------------------------------------*/
+.horoscope-wrapper
+{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.horoscope-content
+{
+  width : 50%;
+  padding-top: 90px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.horoscope-content>h3
+{
+  font-weight: 300;
+  color: #2487CA;
+}
+.horoscope-content>h1
+{
+  font-weight: 700;
+  font-size: 50px;
+}
+.horoscope-content>.line
+{
+  height: 5px;
+  width: 100px;
+  margin: 10px 0px 30px 0px;
+  background: #393F53;
+}
+.horoscope-content>.share
+{
+  position: absolute;
+  bottom: 0px;
+}
+.horoscope-content>.share>.icon-wrapper
+{
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.horoscope-image
+{
+  height: 500px;
+  width : 50%;
+  padding: 50px;
+  background-image : url('../media/horoscopeLight2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.horoscope-image>img
+{
+  margin: 0px auto;
+}
+
+/*--------------------------------------------------------------
+              media query/ mobile responsive STYLES
+---------------------------------------------------------------*/
+@media only screen and (max-width: 1000px) {
+  .horoscope-wrapper
+  {
+    display: block;
+  }
+  .horoscope-content
+  {
+    width : 100%;
+  }
+  .horoscope-content>.share
+  {
+    position: relative;
+  }
+  .horoscope-image
+  {
+    width : 100%;
+  }
+}
+@media only screen and (max-width: 767px)
+ {
+  nav{
+    padding : 0px 40px;
+  }
+  .logo
+  {
+    height: 40px;
+    width: 150px;
+  }
+  .nav-wrapper
+  {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-wrapper a
+  {
+    font-weight: 400;
+    line-height: 40px;
+  }
+  .horoscope-image
+  {
+    padding: 100px;
+  }
+  .horoscope-image>img{
+    height: 300px;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 620px)
+{
+  #Navigation{
+    display: none;
+  }
+  #navbar-small
+  {
+    display: flex;
+  }
+  .website-intro
+  {
+    width: 100%;
+    background-image: none;
+  }
+  .horoscope-content
+  {
+    padding: 0px 16px;
+  }
+}
+@media only screen and (max-width: 570px)
+{
+  #Introduction
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .horoscope-image
+  {
+    height: auto;
+    background-image : none;
+  }
+}
+@media only screen and (max-width: 400px)
+{
+  #Horoscopes
+  {
+    padding-top: 40px;
+  }
+  .horoscope-image
+  {
+    padding: 30px 0px 0px 30px;
+  }
+  .horoscope-image>img
+  {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 375px)
+{
+  .horoscope-image
+  {
+    padding: 50px 0px 0px 50px;
+  }
+  .horoscope-image>img
+  {
+    height: 200px;
+    width: 200px;
+  }
+}
